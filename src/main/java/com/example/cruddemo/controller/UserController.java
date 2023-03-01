@@ -41,10 +41,10 @@ public class UserController
 	{
 		return userService.getAllUsers();
 	}
-	@GetMapping("/ajit")
+	@GetMapping("/krishna")
 	public String name()
 	{
-		return "Ajit Bhaiya JAdhav";
+		return "Krishna Bhaiya JAdhav";
 	}
 	
 	@GetMapping("/user/{id}")
