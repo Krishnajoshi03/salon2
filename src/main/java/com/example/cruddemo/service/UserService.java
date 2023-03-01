@@ -2,6 +2,8 @@ package com.example.cruddemo.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.example.cruddemo.model.Users;
 
 public interface UserService {
