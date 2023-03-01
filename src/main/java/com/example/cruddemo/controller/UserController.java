@@ -29,6 +29,7 @@ public class UserController
 		this.userService=userservice;
 	}
 	
+	
 	@PostMapping("/create")
 	public ResponseEntity<Users> createUser(@RequestBody Users user)
 	{
@@ -39,6 +40,11 @@ public class UserController
 	public List<Users> getAllUsers()
 	{
 		return userService.getAllUsers();
+	}
+	@GetMapping("/ajit")
+	public String name()
+	{
+		return "Ajit Bhaiya JAdhav";
 	}
 	
 	@GetMapping("/user/{id}")
