@@ -1,16 +1,18 @@
 package com.example.cruddemo.repository;
 
+
+import com.example.cruddemo.model.Shop;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.example.cruddemo.model.Users;
+
 
 @Repository
-public interface UserRepositoy extends MongoRepository<Users, String>{
-
+public interface ShopRepository extends MongoRepository<Shop,String>
+{
 	
-	
+	Shop findBymobileNumber(String mobile_num);
 	
 
 }
