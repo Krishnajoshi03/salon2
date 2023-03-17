@@ -2,8 +2,6 @@ package com.example.cruddemo.controller;
 
 import java.util.*;
 
-import javax.swing.text.Document;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,7 +29,7 @@ public class UserController {
 		this.userService = userservice;
 	}
 
-	@PostMapping("/create")
+	@PostMapping("/user")
 	public ResponseEntity<Users> createUser(@RequestBody Users user) {
 		Users user1 = userService.createUser(user);
 		if (user1 == null) {
@@ -39,9 +38,9 @@ public class UserController {
 		return new ResponseEntity<Users>(user1, HttpStatus.CREATED);
 	}
 
-	@GetMapping("/users")
-	public ResponseEntity<List<Users>> getAllUsers() {
-		return new ResponseEntity<List<Users>>(userService.getAllUsers(),HttpStatus.OK);
+	@RequestMapping(value="/users", method=RequestMethod.GET)
+	public	List<Users> getAll() {
+		return userService.getAllUsers();
 	}
 
 	@GetMapping("/user/{id}")

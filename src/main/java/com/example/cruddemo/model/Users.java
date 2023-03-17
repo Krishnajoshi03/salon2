@@ -1,5 +1,7 @@
 package com.example.cruddemo.model;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import org.bson.types.ObjectId;
@@ -11,21 +13,28 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.mongodb.lang.NonNull;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
-@Data
+
 @Document("sl_user")
-@Getter
+@Data
+@AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@RequiredArgsConstructor
 public class Users {
 
-	@JsonCreator
-	public Users() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
 	@JsonProperty("u_fn")
 	private String u_fn;
 	@JsonProperty("u_ln")
@@ -42,13 +51,16 @@ public class Users {
 	private Address u_addr;
 	@DBRef
 	@JsonProperty("u_fav")
-	private List<Shop> u_fav;
+	private ArrayList<Shop> u_fav;
 
-	public List<Shop> getU_fav() {
+	
+
+	
+	public ArrayList<Shop> getU_fav() {
 		return u_fav;
 	}
 
-	public void setU_fav(List<Shop> u_fav) {
+	public void setU_fav(ArrayList<Shop> u_fav) {
 		this.u_fav = u_fav;
 	}
 

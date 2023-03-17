@@ -2,6 +2,7 @@ package com.example.cruddemo.model;
 import java.time.LocalDateTime;
 import java.util.*;
 
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
@@ -11,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Document("sl_shop")
+
 public class Shop {
 	
 
@@ -20,10 +22,9 @@ public class Shop {
 
 	@JsonProperty("sp_nm")
 	private String sp_nm;
-	
 	@JsonProperty("sp_id")
 	@Id
-	private String sp_id;
+	private ObjectId sp_id;
 	@JsonProperty("sp_addr")
 	private Address sp_addr;
 	@JsonProperty("mobileNumber")
@@ -40,10 +41,27 @@ public class Shop {
 	private String sp_opn_tm;
 	@JsonProperty("sp_cls_tm")
 	private String sp_cls_tm;
+	@JsonProperty("sp_act_sts")
+	private boolean sp_act_sts;
+	
+	@DBRef
+	Owner sp_own;
 	
 	
-	
-	  public Date getSp_acc_created_date() {
+
+	public boolean isSp_act_sts() {
+		return sp_act_sts;
+	}
+
+
+
+	public void setSp_act_sts(boolean sp_act_sts) {
+		this.sp_act_sts = sp_act_sts;
+	}
+
+
+
+	public Date getSp_acc_created_date() {
 		return sp_acc_created_date;
 	}
 
@@ -67,13 +85,11 @@ public class Shop {
 
 
 
-	public String getSp_id() {
+	public ObjectId getSp_id() {
 		return sp_id;
 	}
 
-
-
-	public void setSp_id(String sp_id) {
+	public void setSp_id(ObjectId sp_id) {
 		this.sp_id = sp_id;
 	}
 
@@ -82,8 +98,6 @@ public class Shop {
 	public Address getSp_addr() {
 		return sp_addr;
 	}
-
-
 
 	public void setSp_addr(Address sp_addr) {
 		this.sp_addr = sp_addr;
@@ -176,7 +190,7 @@ public class Shop {
 
 
 	public Shop() {
-		sp_id=new ObjectId().toString();
+		//sp_id=new ObjectId();
 		
 	}
 	

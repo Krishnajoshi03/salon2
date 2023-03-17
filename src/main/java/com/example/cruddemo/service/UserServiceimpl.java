@@ -4,40 +4,37 @@ import java.util.*;
 
 import javax.swing.text.Document;
 
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.ExecutableFindOperation;
 import org.springframework.data.mongodb.core.FindAndModifyOptions;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.aggregation.*;
-import org.springframework.data.mongodb.core.aggregation.UnwindOperation;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.Mapping;
 
 import com.example.cruddemo.model.Shop;
 import com.example.cruddemo.model.Users;
-import com.example.cruddemo.repository.MongoTemplateRepository;
-import com.example.cruddemo.repository.UserRepositoryimpl;
+
 import com.example.cruddemo.repository.UserRepositoy;
+import com.fasterxml.jackson.core.JsonParser;
 import com.mongodb.internal.operation.FindOperation;
+
+import springfox.documentation.spring.web.json.Json;
 
 
 @Service
 public class UserServiceimpl implements UserService {
 
-	private MongoOperations mongoOperations;
-	 @Autowired
-	    public UserServiceimpl(MongoOperations mongoOperations) {
-	        this.mongoOperations = mongoOperations;
-	    }
 	public UserServiceimpl() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	@Autowired
-	MongoTemplateRepository repositoyimpl;
 	
 	@Autowired
 	MongoTemplate mongoTemplate;
@@ -53,20 +50,17 @@ public class UserServiceimpl implements UserService {
 		if (user != null) {
 			return null;
 		}
-		return repositoy.insert(users);
+		return repositoy.save(users);
 	}
 
 	@Override
 	public List<Users> getAllUsers() {
-		System.out.println("in getall serivce");
-		Query query= new Query();
-		UnwindOperation unwindOperation = Aggregation.unwind("u_fav");
-//		return mongoTemplate.findAll(Users.class);
-		Aggregation aggregation= Aggregation.newAggregation(Aggregation.match(Criteria.where("u_mn").regex("u_mn","i")),unwindOperation);
-		List<Users> results=mongoOperations.aggregate(aggregation,"Users", Users.class).getMappedResults();
-		return results;// @formatter:off
-	
+//		System.out.println("in getall serivce");
+//		UnwindOperation operation= Aggregation.unwind("u_fav");
+//		MatchOperation aggregation2=Aggregation.match(Criteria.where("u_mn").exists(true));
+//		Aggregation aggregation =Aggregation.newAggregation(operation,aggregation2);
 
+		return  repositoy.findAll();// @formatter:off
 	}
 
 	@Override
@@ -84,7 +78,7 @@ public class UserServiceimpl implements UserService {
 		existingUser.setU_ln(user.getU_ln());
 		existingUser.setU_mn(user.getU_mn());
 		existingUser.setU_mn(user.getU_mn());
-		;
+		
 		repositoy.save(existingUser);
 		return existingUser;
 	}
@@ -111,7 +105,7 @@ public class UserServiceimpl implements UserService {
 		if (id.isEmpty() || id == null) {
 			return "-1";
 		}
-		Query query1 = new Query(Criteria.where("u_fav.$id").is(shopId));
+		Query query1 = new Query(Criteria.where("u_fav.$id").is(new ObjectId(shopId)));
 //		List<Users> isFavExist = mongoTemplate.find(query1, Users.class);
 //		if (isFavExist != null || !isFavExist.isEmpty()) {
 //			return "-2";
@@ -120,12 +114,11 @@ public class UserServiceimpl implements UserService {
 		return id1;
 
 	}
-
 	@Override
 	public String removeFromFav(String shopId, String userId) {
 		org.springframework.data.mongodb.core.query.Query query = new org.springframework.data.mongodb.core.query.Query()
 				.addCriteria(Criteria.where("u_mn").is(userId));
-		Update update = new Update().pull("u_fav", shopId);
+		Update update = new Update().pull("u_fav", new ObjectId(shopId));
 		FindAndModifyOptions options = new FindAndModifyOptions().returnNew(true).upsert(true);
 		
 //		Query query1 = new Query(Criteria.where("u_fav.$id").is(shopId));

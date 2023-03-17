@@ -1,5 +1,6 @@
 package com.example.cruddemo;
 
+
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -8,6 +9,15 @@ class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
 	}
-
+	
+	@Test
+	void testGetUser()
+	{
+		
+	//assertThat(null);	
+	
+	}
+	
 }
