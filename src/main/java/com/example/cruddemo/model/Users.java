@@ -1,5 +1,6 @@
 package com.example.cruddemo.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -8,6 +9,7 @@ import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.redis.core.RedisHash;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -26,10 +28,9 @@ import lombok.RequiredArgsConstructor;
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @RequiredArgsConstructor
-public class Users {
+public class Users  implements Serializable{
 
-	
-
+	private static final long serialVersionUID = 1L;
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
@@ -51,65 +52,8 @@ public class Users {
 	private Address u_addr;
 	@DBRef
 	@JsonProperty("u_fav")
-	private ArrayList<Shop> u_fav;
+	private List<Shop> u_fav;
 
 	
-
-	
-	public ArrayList<Shop> getU_fav() {
-		return u_fav;
-	}
-
-	public void setU_fav(ArrayList<Shop> u_fav) {
-		this.u_fav = u_fav;
-	}
-
-	public String getU_fn() {
-		return u_fn;
-	}
-
-	public void setU_fn(String u_fn) {
-		this.u_fn = u_fn;
-	}
-
-	public String getU_ln() {
-		return u_ln;
-	}
-
-	public void setU_ln(String u_ln) {
-		this.u_ln = u_ln;
-	}
-
-	public String getU_em() {
-		return u_em;
-	}
-
-	public void setU_em(String u_em) {
-		this.u_em = u_em;
-	}
-
-	public String getU_mn() {
-		return u_mn;
-	}
-
-	public void setU_mn(String u_mn) {
-		this.u_mn = u_mn;
-	}
-
-	public String getU_pic() {
-		return u_pic;
-	}
-
-	public void setU_pic(String u_pic) {
-		this.u_pic = u_pic;
-	}
-
-	public Address getU_addr() {
-		return u_addr;
-	}
-
-	public void setU_addr(Address u_addr) {
-		this.u_addr = u_addr;
-	}
 
 }

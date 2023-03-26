@@ -1,4 +1,5 @@
 package com.example.cruddemo.model;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -13,8 +14,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Document("sl_shop")
 
-public class Shop {
+public class Shop implements Serializable {
 	
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@DateTimeFormat(iso = ISO.TIME)
 	@JsonProperty("sp_acc_created_date")
@@ -24,7 +30,7 @@ public class Shop {
 	private String sp_nm;
 	@JsonProperty("sp_id")
 	@Id
-	private ObjectId sp_id;
+	private String sp_id;
 	@JsonProperty("sp_addr")
 	private Address sp_addr;
 	@JsonProperty("mobileNumber")
@@ -85,11 +91,11 @@ public class Shop {
 
 
 
-	public ObjectId getSp_id() {
+	public String getSp_id() {
 		return sp_id;
 	}
 
-	public void setSp_id(ObjectId sp_id) {
+	public void setSp_id(String sp_id) {
 		this.sp_id = sp_id;
 	}
 

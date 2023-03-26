@@ -1,5 +1,7 @@
 package com.example.cruddemo.model;
 
+import java.io.Serializable;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -12,7 +14,7 @@ import lombok.Data;
 @Data
 @Document("sl_owner")
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class Owner {
+public class Owner  implements Serializable{
 	
 	@JsonProperty("own_fn")
 	String firstName;

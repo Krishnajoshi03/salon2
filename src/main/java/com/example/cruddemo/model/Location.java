@@ -1,9 +1,11 @@
 package com.example.cruddemo.model;
 
+import java.io.Serializable;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class Location {
+public class Location implements Serializable {
 	 public String getLatitude() {
 		return latitude;
 	}

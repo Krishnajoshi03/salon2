@@ -7,5 +7,6 @@ import com.example.cruddemo.model.Shop;
 @Service
 public interface ShopService {
 	List<Shop> getAllShops();
-
+	public String createShop(Shop shop);
+	public Shop findShopByMobile(String mobile);
 }

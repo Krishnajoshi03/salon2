@@ -8,9 +8,8 @@ import io.swagger.v3.oas.annotations.servers.Server;
 
 @Service
 public interface OwnerService {
-	
-	Owner getOwner(String id);
 
+	Owner getOwner(String id);
 
 	String createOwner(String userId);
 
