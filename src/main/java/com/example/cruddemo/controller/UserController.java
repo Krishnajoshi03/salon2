@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.cruddemo.model.Users;
-import com.example.cruddemo.service.UserServiceimpl;
+import com.example.cruddemo.service.ServiceImpl.UserServiceimpl;
 
 @RestController
 @RequestMapping("/api")
@@ -35,8 +35,8 @@ public class UserController {
 	public UserController(UserServiceimpl userservice) {
 		this.userService = userservice;
 	}
-	
-		@PostMapping("/user")
+
+	@PostMapping("/user")
 	public ResponseEntity<Users> createUser(@RequestBody Users user) {
 		Users user1 = userService.createUser(user);
 		if (user1 == null) {
@@ -57,7 +57,9 @@ public class UserController {
 	public ResponseEntity<Users> getUserByid(@PathVariable("id") String userId) {
 		System.out.println(userId);
 		logger.info("in get id");
-		Users user = userService.getUserById(userId);
+		Users user=null ;
+		
+			 user = userService.getUserById(userId);		
 		if (user == null) {
 			logger.error("No User With Id " + userId);
 			return new ResponseEntity<Users>(HttpStatus.NO_CONTENT);

@@ -34,8 +34,9 @@ import com.example.cruddemo.model.Address;
 import com.example.cruddemo.model.Shop;
 import com.example.cruddemo.model.Users;
 import com.example.cruddemo.repository.UserRepositoy;
+import com.example.cruddemo.service.ServiceImpl.UserServiceimpl;
+
 import java.lang.Exception;
-import com.example.cruddemo.service.UserServiceimpl;
 
 // Class For Testing Service Layer Of User
 @ExtendWith(MockitoExtension.class)

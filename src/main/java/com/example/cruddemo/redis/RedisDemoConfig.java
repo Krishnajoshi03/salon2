@@ -1,10 +1,11 @@
-package Redis;
+package com.example.cruddemo.redis;
 
 
 import java.time.Duration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
@@ -15,7 +16,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.repository.configuration.EnableRedisRepositories;
 import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
-
+@EnableCaching
 @Configuration
 public class RedisDemoConfig {
  
@@ -34,7 +35,7 @@ public class RedisDemoConfig {
         redisStandaloneConfiguration.setPort(Integer.valueOf(port));        
 
         JedisClientConfigurationBuilder jedisClientConfiguration = JedisClientConfiguration.builder();
-//        jedisClientConfiguration.connectTimeout(Duration.ofSeconds(Integer.valueOf(timeout)));// connection timeout
+        jedisClientConfiguration.connectTimeout(Duration.ofSeconds(Integer.valueOf(20)));// connection timeout
 
         JedisConnectionFactory jedisConFactory = new JedisConnectionFactory(redisStandaloneConfiguration,  jedisClientConfiguration.build());
         return jedisConFactory;
@@ -50,6 +51,7 @@ public class RedisDemoConfig {
      template.setValueSerializer(new JdkSerializationRedisSerializer());
      template.setEnableTransactionSupport(true);
      template.afterPropertiesSet();
+     
      return template;
  }
 }

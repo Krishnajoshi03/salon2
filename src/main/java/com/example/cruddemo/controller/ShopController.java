@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.example.cruddemo.model.Shop;
-import com.example.cruddemo.service.ShopServiceimpl;
+import com.example.cruddemo.service.ServiceImpl.ShopServiceimpl;
+
+import java.math.BigInteger;
 import java.util.*;
 
 @RestController
@@ -31,6 +33,7 @@ public class ShopController {
 
 	@PostMapping("shop")
 	ResponseEntity<String> createShop(@RequestBody Shop shop) {
+		//shop.setSp_id(BigInteger.valueOf(100));
 		String id = serviceimpl.createShop(shop);
 		if (id == "-1") {
 			return new ResponseEntity<>(HttpStatus.CONFLICT);

@@ -233,3 +233,330 @@
 28 2023/03/26 16:14:57,349 328875 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
 30 2023/03/26 16:14:57,351 328877 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
 32 2023/03/26 16:15:08,043 339569 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+2 2023/03/26 17:52:04,287 47439 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+4 2023/03/26 17:52:19,368 62520 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+6 2023/03/26 17:52:45,083 88235 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+8 2023/03/26 17:52:45,085 88237 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 999
+2 2023/03/26 17:56:12,360 52663 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/03/26 17:56:12,433 52736 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 999
+6 2023/03/26 17:56:22,087 62390 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+8 2023/03/26 17:56:22,097 62400 [INFO  ] [http-nio-9090-exec-5] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.getUserById(UserServiceimpl.java:70) - Get User By Id logout
+10 2023/03/26 17:56:22,195 62498 [ERROR ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:62) - No User With Id logout
+2 2023/03/26 17:59:24,972 32841 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+4 2023/03/26 18:01:01,293 129162 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+6 2023/03/26 18:02:12,738 200607 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+8 2023/03/26 18:02:12,741 200610 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 999
+10 2023/03/26 18:02:27,492 215361 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+12 2023/03/26 18:02:27,494 215363 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 999
+14 2023/03/26 18:05:42,958 410827 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+16 2023/03/26 18:05:42,964 410833 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 200
+2 2023/03/26 18:13:18,429 143232 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/03/26 18:13:18,519 143322 [ERROR ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:62) - No User With Id 16
+6 2023/03/26 18:13:32,488 157291 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+8 2023/03/26 18:13:32,491 157294 [ERROR ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:62) - No User With Id 16
+10 2023/03/26 18:14:32,879 217682 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+12 2023/03/26 18:14:32,883 217686 [ERROR ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:62) - No User With Id 16
+14 2023/03/26 18:14:33,589 218392 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+16 2023/03/26 18:14:33,591 218394 [ERROR ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:62) - No User With Id 16
+18 2023/03/26 18:14:44,724 229527 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+20 2023/03/26 18:14:44,727 229530 [ERROR ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:62) - No User With Id 16
+2 2023/03/30 23:41:21,101 20999 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/03/30 23:42:10,222 16560 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/03/30 23:42:10,308 16646 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 999
+2 2023/03/31 00:05:03,980 8701 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+4 2023/03/31 00:05:28,063 32784 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+6 2023/03/31 00:05:28,112 32833 [INFO  ] [http-nio-9090-exec-3] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:107) - In adding new booking
+8 2023/03/31 00:05:28,142 32863 [INFO  ] [http-nio-9090-exec-3] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:109) - Added booking for User with Id 999
+10 2023/03/31 00:05:52,389 57110 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+12 2023/03/31 00:07:40,314 165035 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+14 2023/03/31 00:07:40,321 165042 [INFO  ] [http-nio-9090-exec-8] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:107) - In adding new booking
+16 2023/03/31 00:07:40,346 165067 [INFO  ] [http-nio-9090-exec-8] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:109) - Added booking for User with Id 999
+18 2023/03/31 00:08:16,235 200956 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+20 2023/03/31 00:08:33,768 218489 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+22 2023/03/31 00:10:17,465 322186 [INFO  ] [http-nio-9090-exec-6] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+24 2023/03/31 00:10:35,308 340029 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+26 2023/03/31 00:11:25,022 389743 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+28 2023/03/31 00:11:41,929 406650 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+30 2023/03/31 00:12:26,361 451082 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+32 2023/03/31 00:12:52,695 477416 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+34 2023/03/31 00:12:52,720 477441 [INFO  ] [http-nio-9090-exec-5] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:107) - In adding new booking
+36 2023/03/31 00:12:52,728 477449 [INFO  ] [http-nio-9090-exec-5] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:109) - Added booking for User with Id 2
+38 2023/03/31 00:13:27,566 512287 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.BookingController cruddemo.controller.BookingController.findAllBooking(BookingController.java:62) - In get all booking
+40 2023/03/31 00:14:33,737 578458 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+42 2023/03/31 00:14:38,594 583315 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.findAllBooking(BookingController.java:62) - In get all booking
+44 2023/03/31 00:16:04,789 669510 [INFO  ] [http-nio-9090-exec-4] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.addToFavourites(UserServiceimpl.java:141) - In Add to Favourites
+46 2023/03/31 00:16:04,793 669514 [INFO  ] [http-nio-9090-exec-4] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.addToFavourites(UserServiceimpl.java:143) - Added to Favourites for User with Id 12
+48 2023/03/31 00:16:04,796 669517 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.addToFavourites(UserController.java:98) - In Add To Favourites
+2 2023/03/31 00:19:46,071 43708 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+4 2023/03/31 00:19:46,279 43916 [INFO  ] [http-nio-9090-exec-8] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:107) - In adding new booking
+6 2023/03/31 00:19:46,308 43945 [INFO  ] [http-nio-9090-exec-8] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:109) - Added booking for User with Id 2
+8 2023/03/31 00:20:06,705 64342 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.BookingController cruddemo.controller.BookingController.findAllBooking(BookingController.java:62) - In get all booking
+10 2023/03/31 00:20:43,183 100820 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+12 2023/03/31 00:20:53,309 110946 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+14 2023/03/31 00:21:29,594 147231 [INFO  ] [http-nio-9090-exec-6] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+16 2023/03/31 00:22:45,500 223137 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+18 2023/03/31 00:22:51,781 229418 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+20 2023/03/31 00:22:51,783 229420 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 999
+22 2023/03/31 00:22:59,319 236956 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+24 2023/03/31 00:22:59,321 236958 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 999
+2 2023/03/31 00:38:25,216 547693 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.findAllBooking(BookingController.java:62) - In get all booking
+2 2023/03/31 00:38:50,146 5632 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.BookingController cruddemo.controller.BookingController.findAllBooking(BookingController.java:62) - In get all booking
+2 2023/03/31 00:59:01,067 39990 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+4 2023/03/31 00:59:01,246 40169 [INFO  ] [http-nio-9090-exec-8] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:107) - In adding new booking
+6 2023/03/31 00:59:01,276 40199 [INFO  ] [http-nio-9090-exec-8] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:109) - Added booking for User with Id 11
+2 2023/03/31 01:00:02,262 6938 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+4 2023/03/31 01:00:02,346 7022 [INFO  ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:107) - In adding new booking
+6 2023/03/31 01:00:02,363 7039 [INFO  ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:109) - Added booking for User with Id 11
+2 2023/03/31 01:00:49,634 6633 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+4 2023/03/31 01:00:49,719 6718 [INFO  ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:107) - In adding new booking
+6 2023/03/31 01:00:49,731 6730 [INFO  ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:109) - Added booking for User with Id 11
+2 2023/03/31 01:04:29,096 25049 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+4 2023/03/31 01:04:29,285 25238 [INFO  ] [http-nio-9090-exec-8] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:107) - In adding new booking
+6 2023/03/31 01:04:29,312 25265 [INFO  ] [http-nio-9090-exec-8] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:109) - Added booking for User with Id 11
+8 2023/03/31 01:07:58,673 234626 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+10 2023/03/31 01:07:58,684 234637 [INFO  ] [http-nio-9090-exec-10] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:107) - In adding new booking
+12 2023/03/31 01:07:58,692 234645 [INFO  ] [http-nio-9090-exec-10] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:109) - Added booking for User with Id 11
+2 2023/03/31 01:11:56,258 47678 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+4 2023/03/31 01:11:56,394 47814 [INFO  ] [http-nio-9090-exec-8] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:106) - In adding new booking
+6 2023/03/31 01:11:56,460 47880 [INFO  ] [http-nio-9090-exec-8] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:108) - Added booking for User with Id 100
+8 2023/03/31 01:13:01,696 113116 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+10 2023/03/31 01:13:01,700 113120 [INFO  ] [http-nio-9090-exec-10] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:106) - In adding new booking
+12 2023/03/31 01:13:01,717 113137 [INFO  ] [http-nio-9090-exec-10] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:108) - Added booking for User with Id 2
+2 2023/03/31 01:14:36,375 5673 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:39) - In New Booking
+4 2023/03/31 01:14:36,428 5726 [INFO  ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:106) - In adding new booking
+6 2023/03/31 01:14:36,468 5766 [INFO  ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:108) - Added booking for User with Id 2
+2 2023/03/31 11:21:18,314 67104 [INFO  ] [http-nio-9090-exec-9] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:40) - In New Booking
+4 2023/03/31 11:21:18,427 67217 [INFO  ] [http-nio-9090-exec-9] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.getUserById(UserServiceimpl.java:72) - Get User By Id 18
+6 2023/03/31 11:21:18,469 67259 [INFO  ] [http-nio-9090-exec-9] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:106) - In adding new booking
+8 2023/03/31 11:21:18,484 67274 [INFO  ] [http-nio-9090-exec-9] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:108) - Added booking for User with Id 18
+2 2023/03/31 11:21:56,472 7082 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:40) - In New Booking
+2 2023/03/31 11:27:49,859 6583 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:43) - In New Booking
+2 2023/03/31 11:47:28,624 29373 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:43) - In New Booking
+4 2023/03/31 11:48:25,936 86685 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+6 2023/03/31 11:48:37,212 97961 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+8 2023/03/31 11:48:37,216 97965 [INFO  ] [http-nio-9090-exec-3] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.getUserById(UserServiceimpl.java:72) - Get User By Id 11
+10 2023/03/31 11:48:42,765 103514 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+12 2023/03/31 11:48:49,085 109834 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+14 2023/03/31 11:48:49,088 109837 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 999
+16 2023/03/31 11:49:01,192 121941 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:43) - In New Booking
+18 2023/03/31 11:49:01,223 121972 [INFO  ] [http-nio-9090-exec-7] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:106) - In adding new booking
+2 2023/03/31 11:53:31,384 18289 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:43) - In New Booking
+4 2023/03/31 11:55:20,649 127554 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:43) - In New Booking
+6 2023/03/31 11:59:31,581 378486 [INFO  ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:106) - In adding new booking
+2 2023/04/07 21:26:55,150 135763 [INFO  ] [http-nio-9090-exec-6] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+4 2023/04/07 21:29:00,432 261045 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+6 2023/04/07 21:29:00,447 261060 [INFO  ] [http-nio-9090-exec-7] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.getUserById(UserServiceimpl.java:72) - Get User By Id 1
+8 2023/04/07 21:29:00,545 261158 [ERROR ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:62) - No User With Id 1
+10 2023/04/07 21:29:11,900 272513 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+12 2023/04/07 21:29:11,902 272515 [INFO  ] [http-nio-9090-exec-8] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.getUserById(UserServiceimpl.java:72) - Get User By Id 11
+2 2023/04/08 23:28:54,612 261943 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:60) - in get id
+4 2023/04/08 23:29:23,602 290933 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:60) - in get id
+6 2023/04/08 23:29:23,652 290983 [INFO  ] [http-nio-9090-exec-2] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.getUserById(UserServiceimpl.java:72) - Get User By Id 11
+8 2023/04/08 23:29:23,790 291121 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:66) - Fetched User With Id 11
+10 2023/04/08 23:29:44,250 311581 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:60) - in get id
+12 2023/04/08 23:29:44,254 311585 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:66) - Fetched User With Id 11
+14 2023/04/08 23:29:58,148 325479 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:60) - in get id
+16 2023/04/08 23:29:58,150 325481 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:66) - Fetched User With Id 11
+2 2023/04/08 23:38:09,087 13096 [ERROR ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.createUser(UserServiceimpl.java:53) - User Added Successfully With Mobile Num191
+4 2023/04/08 23:38:09,151 13160 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.createUser(UserController.java:47) - User Created With Id 191
+6 2023/04/08 23:38:56,175 60184 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:60) - in get id
+8 2023/04/08 23:38:56,237 60246 [INFO  ] [http-nio-9090-exec-2] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.getUserById(UserServiceimpl.java:72) - Get User By Id 191
+10 2023/04/08 23:38:56,264 60273 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:66) - Fetched User With Id 191
+12 2023/04/08 23:39:08,999 73008 [INFO  ] [http-nio-9090-exec-3] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.createUser(UserServiceimpl.java:50) - User Alredy Exist with Mobile Number100
+14 2023/04/08 23:39:08,999 73008 [ERROR ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.createUser(UserController.java:44) - User Already Exist With Given Id100
+16 2023/04/08 23:39:44,879 108888 [ERROR ] [http-nio-9090-exec-4] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.createUser(UserServiceimpl.java:53) - User Added Successfully With Mobile Num143
+18 2023/04/08 23:39:44,883 108892 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.createUser(UserController.java:47) - User Created With Id 143
+2 2023/04/08 23:41:19,705 12053 [ERROR ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.createUser(UserServiceimpl.java:53) - User Added Successfully With Mobile Num121
+4 2023/04/08 23:41:19,771 12119 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.createUser(UserController.java:47) - User Created With Id 121
+2 2023/04/08 23:44:03,769 113709 [INFO  ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.deleteById(UserServiceimpl.java:124) - User Deleted With ID121
+4 2023/04/08 23:44:03,876 113816 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.deleteById(UserController.java:89) - User Deleted With Id 121
+6 2023/04/08 23:44:24,247 134187 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+8 2023/04/08 23:44:24,253 134193 [INFO  ] [http-nio-9090-exec-3] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.getUserById(UserServiceimpl.java:72) - Get User By Id 121
+10 2023/04/08 23:44:24,264 134204 [ERROR ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:62) - No User With Id 121
+12 2023/04/08 23:44:35,246 145186 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+14 2023/04/08 23:44:35,250 145190 [ERROR ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:62) - No User With Id 121
+16 2023/04/08 23:49:11,684 421624 [INFO  ] [http-nio-9090-exec-6] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+2 2023/04/09 11:30:13,209 84864 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:42) - In New Booking
+4 2023/04/09 11:30:13,257 84912 [INFO  ] [http-nio-9090-exec-7] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.getUserById(UserServiceimpl.java:67) - Get User By Id 143
+6 2023/04/09 11:30:13,338 84993 [INFO  ] [http-nio-9090-exec-7] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:101) - In adding new booking
+8 2023/04/09 11:30:13,362 85017 [INFO  ] [http-nio-9090-exec-7] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:103) - Added booking for User with Id 143
+10 2023/04/09 11:30:53,800 125455 [INFO  ] [http-nio-9090-exec-9] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+12 2023/04/09 11:32:41,542 233197 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.BookingController cruddemo.controller.BookingController.findAllBooking(BookingController.java:65) - In get all booking
+2 2023/04/09 11:42:17,781 25855 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:42) - In New Booking 64325741c379860133abb0a1
+4 2023/04/09 11:44:47,669 175743 [INFO  ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.getUserById(UserServiceimpl.java:67) - Get User By Id 191
+6 2023/04/09 11:45:13,582 201656 [INFO  ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:101) - In adding new booking
+8 2023/04/09 11:45:14,043 202117 [INFO  ] [http-nio-9090-exec-1] cruddemo.service.UserServiceimpl cruddemo.service.UserServiceimpl.updateBooking(UserServiceimpl.java:103) - Added booking for User with Id 191
+2 2023/04/09 15:27:49,504 10283 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/04/09 15:28:01,703 22482 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+6 2023/04/09 15:28:07,114 27893 [INFO  ] [http-nio-9090-exec-6] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+8 2023/04/09 15:28:07,127 27906 [INFO  ] [http-nio-9090-exec-6] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:69) - Get User By Id 100
+10 2023/04/09 15:28:32,512 53291 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+12 2023/04/09 15:28:32,515 53294 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+14 2023/04/09 15:31:52,726 253505 [INFO  ] [http-nio-9090-exec-1] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.updateById(UserServiceimpl.java:88) - User Updated With Id 32
+16 2023/04/09 15:31:52,774 253553 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.updateUser(UserController.java:77) - In Update User 
+18 2023/04/09 15:32:11,997 272776 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/09 15:40:02,774 9139 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/04/09 15:43:17,558 203923 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/09 15:51:59,767 9792 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/09 16:09:26,946 7020 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/04/09 16:11:44,629 144703 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+6 2023/04/09 16:11:44,635 144709 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+8 2023/04/09 16:11:51,483 151557 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+10 2023/04/09 16:11:51,485 151559 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+12 2023/04/09 16:12:11,546 171620 [INFO  ] [http-nio-9090-exec-6] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+14 2023/04/09 16:12:11,548 171622 [INFO  ] [http-nio-9090-exec-6] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+16 2023/04/09 16:12:27,030 187104 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+18 2023/04/09 16:12:54,569 214643 [INFO  ] [http-nio-9090-exec-8] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.updateById(UserServiceimpl.java:88) - User Updated With Id 32
+20 2023/04/09 16:12:54,594 214668 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.updateUser(UserController.java:77) - In Update User 
+22 2023/04/09 16:13:01,281 221355 [INFO  ] [http-nio-9090-exec-9] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+24 2023/04/09 16:13:01,285 221359 [INFO  ] [http-nio-9090-exec-9] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+26 2023/04/09 16:13:08,304 228378 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+28 2023/04/09 16:13:08,305 228379 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+30 2023/04/09 16:13:21,270 241344 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+32 2023/04/09 16:13:21,272 241346 [INFO  ] [http-nio-9090-exec-2] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:69) - Get User By Id 31
+34 2023/04/09 16:13:21,283 241357 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 31
+36 2023/04/09 16:13:28,561 248635 [INFO  ] [http-nio-9090-exec-3] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.updateById(UserServiceimpl.java:88) - User Updated With Id 31
+38 2023/04/09 16:13:28,568 248642 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.updateUser(UserController.java:77) - In Update User 
+40 2023/04/09 16:13:32,725 252799 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+42 2023/04/09 16:13:32,727 252801 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 31
+44 2023/04/09 16:14:01,888 281962 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+46 2023/04/09 16:15:34,342 374416 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+48 2023/04/09 16:15:34,344 374418 [INFO  ] [http-nio-9090-exec-7] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:69) - Get User By Id 143
+50 2023/04/09 16:16:17,676 417750 [INFO  ] [http-nio-9090-exec-9] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+52 2023/04/09 16:16:17,678 417752 [INFO  ] [http-nio-9090-exec-9] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:69) - Get User By Id 32
+54 2023/04/09 16:16:17,683 417757 [INFO  ] [http-nio-9090-exec-9] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+56 2023/04/09 16:16:22,730 422804 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+58 2023/04/09 16:16:22,733 422807 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+60 2023/04/09 16:16:23,902 423976 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+62 2023/04/09 16:16:23,904 423978 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+64 2023/04/09 16:16:24,863 424937 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+66 2023/04/09 16:16:24,867 424941 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+68 2023/04/09 16:16:25,636 425710 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+70 2023/04/09 16:16:25,639 425713 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+72 2023/04/09 16:21:10,985 711059 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+74 2023/04/09 16:21:10,989 711063 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+76 2023/04/09 16:21:19,017 719091 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+78 2023/04/09 16:21:19,020 719094 [INFO  ] [http-nio-9090-exec-8] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:69) - Get User By Id 31
+80 2023/04/09 16:21:19,025 719099 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 31
+82 2023/04/09 16:21:22,148 722222 [INFO  ] [http-nio-9090-exec-9] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+84 2023/04/09 16:21:22,150 722224 [INFO  ] [http-nio-9090-exec-9] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 31
+86 2023/04/09 16:21:28,489 728563 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+88 2023/04/09 16:21:28,492 728566 [INFO  ] [http-nio-9090-exec-10] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:69) - Get User By Id 143
+2 2023/04/09 16:30:58,509 9795 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/04/09 16:30:58,634 9920 [INFO  ] [http-nio-9090-exec-1] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:69) - Get User By Id 143
+2 2023/04/09 16:33:32,369 7421 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/04/09 16:33:32,502 7554 [INFO  ] [http-nio-9090-exec-1] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:69) - Get User By Id 143
+6 2023/04/09 16:33:32,771 7823 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 143
+2 2023/04/09 16:34:43,111 6434 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/04/09 16:34:43,220 6543 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 143
+2 2023/04/09 16:48:48,863 56294 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+2 2023/04/09 16:49:55,667 7304 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+4 2023/04/09 16:50:14,717 26354 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/09 16:51:55,946 11303 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/09 16:57:58,769 7499 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/09 16:58:26,692 7623 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/09 17:16:16,902 9806 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/09 17:17:00,303 7271 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/10 10:12:17,185 22783 [INFO  ] [http-nio-9090-exec-6] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/04/10 10:12:17,286 22884 [INFO  ] [http-nio-9090-exec-6] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 32
+6 2023/04/10 10:12:27,849 33447 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+8 2023/04/10 10:14:42,894 168492 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/10 10:20:20,473 31687 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+2 2023/04/10 10:21:03,219 11501 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+2 2023/04/10 10:21:23,319 7138 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+2 2023/04/10 10:21:45,385 6752 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+4 2023/04/10 10:21:59,278 20645 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+2 2023/04/10 10:23:27,049 8580 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+4 2023/04/10 10:28:11,633 293164 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+6 2023/04/10 10:28:11,650 293181 [INFO  ] [http-nio-9090-exec-3] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:70) - Get User By Id 100
+8 2023/04/10 10:29:31,967 373498 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/10 10:51:03,675 153417 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+2 2023/04/10 10:55:45,130 10414 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:43) - In New Booking null
+4 2023/04/10 10:55:45,334 10618 [INFO  ] [http-nio-9090-exec-1] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:70) - Get User By Id 999
+2 2023/04/10 10:58:48,627 8289 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:43) - In New Booking 10
+4 2023/04/10 10:58:48,670 8332 [INFO  ] [http-nio-9090-exec-1] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:70) - Get User By Id 999
+2 2023/04/10 11:07:20,415 54916 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:43) - In New Booking 10
+2 2023/04/10 11:13:17,484 7964 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:43) - In New Booking 10
+4 2023/04/10 11:13:17,576 8056 [INFO  ] [http-nio-9090-exec-1] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:70) - Get User By Id 999
+2 2023/04/10 11:26:52,123 36819 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:42) - In New Booking 6433a52443a7c936d3b46635
+4 2023/04/10 11:27:03,813 48509 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.BookingController cruddemo.controller.BookingController.findAllBooking(BookingController.java:66) - In get all booking
+6 2023/04/10 11:27:39,708 84404 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+8 2023/04/10 11:27:50,434 95130 [INFO  ] [http-nio-9090-exec-6] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+10 2023/04/10 11:27:50,443 95139 [INFO  ] [http-nio-9090-exec-6] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:70) - Get User By Id 999
+12 2023/04/10 11:28:00,539 105235 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+14 2023/04/10 11:28:00,540 105236 [INFO  ] [http-nio-9090-exec-7] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:70) - Get User By Id 21
+16 2023/04/10 11:28:00,545 105241 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 21
+18 2023/04/10 11:51:28,343 1513039 [INFO  ] [http-nio-9090-exec-9] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+20 2023/04/10 11:51:28,347 1513043 [INFO  ] [http-nio-9090-exec-9] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 21
+22 2023/04/10 11:51:42,679 1527375 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+24 2023/04/10 11:51:42,682 1527378 [INFO  ] [http-nio-9090-exec-10] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:70) - Get User By Id 123
+26 2023/04/10 11:51:42,686 1527382 [ERROR ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:62) - No User With Id 123
+2 2023/04/10 12:13:32,295 20075 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.BookingController cruddemo.controller.BookingController.newBooking(BookingController.java:42) - In New Booking 6433b01431742f573eee6191
+4 2023/04/10 12:22:24,201 551981 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.BookingController cruddemo.controller.BookingController.findAllBooking(BookingController.java:66) - In get all booking
+6 2023/04/10 12:22:24,748 552528 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.BookingController cruddemo.controller.BookingController.findAllBooking(BookingController.java:66) - In get all booking
+8 2023/04/10 12:22:50,433 578213 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.BookingController cruddemo.controller.BookingController.findAllBooking(BookingController.java:66) - In get all booking
+2 2023/04/10 21:16:55,252 58535 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/04/10 21:16:55,269 58552 [INFO  ] [http-nio-9090-exec-7] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:70) - Get User By Id 999
+6 2023/04/10 21:17:02,383 65666 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+8 2023/04/10 21:17:02,386 65669 [INFO  ] [http-nio-9090-exec-8] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:70) - Get User By Id 21
+10 2023/04/10 21:17:02,402 65685 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 21
+12 2023/04/10 21:17:15,209 78492 [INFO  ] [http-nio-9090-exec-9] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+14 2023/04/10 21:17:15,212 78495 [INFO  ] [http-nio-9090-exec-9] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 21
+16 2023/04/10 21:17:38,509 101792 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+18 2023/04/10 21:19:26,137 209420 [INFO  ] [http-nio-9090-exec-2] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.updateById(UserServiceimpl.java:89) - User Updated With Id 21
+20 2023/04/10 21:19:26,184 209467 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.updateUser(UserController.java:77) - In Update User 
+22 2023/04/10 21:19:32,800 216083 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+24 2023/04/10 21:19:32,804 216087 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 21
+26 2023/04/10 21:21:01,899 305182 [INFO  ] [http-nio-9090-exec-5] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.addToFavourites(UserServiceimpl.java:138) - In Add to Favourites
+28 2023/04/10 21:21:01,915 305198 [INFO  ] [http-nio-9090-exec-5] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.addToFavourites(UserServiceimpl.java:140) - Added to Favourites for User with Id 21
+30 2023/04/10 21:21:01,917 305200 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.addToFavourites(UserController.java:98) - In Add To Favourites
+32 2023/04/10 21:21:32,852 336135 [INFO  ] [http-nio-9090-exec-6] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+34 2023/04/10 21:26:43,647 646930 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getAll(UserController.java:52) - In Get All Users
+36 2023/04/10 21:28:38,828 762111 [INFO  ] [http-nio-9090-exec-9] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.addToFavourites(UserServiceimpl.java:138) - In Add to Favourites
+2 2023/04/10 21:41:42,145 46587 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/04/10 21:41:42,198 46640 [INFO  ] [http-nio-9090-exec-1] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.getUserById(UserServiceimpl.java:70) - Get User By Id 19
+6 2023/04/10 21:41:42,319 46761 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 19
+8 2023/04/10 21:42:04,162 68604 [INFO  ] [http-nio-9090-exec-3] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.updateById(UserServiceimpl.java:89) - User Updated With Id 19
+10 2023/04/10 21:42:04,182 68624 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.updateUser(UserController.java:77) - In Update User 
+12 2023/04/10 21:42:34,530 98972 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+14 2023/04/10 21:42:34,534 98976 [INFO  ] [http-nio-9090-exec-5] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 19
+16 2023/04/10 21:43:26,956 151398 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+18 2023/04/10 21:43:26,959 151401 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 19
+20 2023/04/10 21:56:34,708 939150 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+22 2023/04/10 21:56:34,711 939153 [INFO  ] [http-nio-9090-exec-10] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 19
+24 2023/04/10 22:00:28,200 1172642 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+26 2023/04/10 22:01:50,627 1255069 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/10 22:08:15,748 7095 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/10 22:08:54,582 11129 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/10 22:10:15,962 9258 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 14:19:06,816 32293 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/04/11 14:19:33,025 58502 [INFO  ] [http-nio-9090-exec-4] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 14:21:40,874 23389 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 14:28:58,711 15129 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 14:35:48,347 21200 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 14:45:53,565 10883 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 14:46:40,505 10078 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 14:49:52,856 8949 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/04/11 14:52:17,024 153117 [ERROR ] [http-nio-9090-exec-2] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.createUser(UserServiceimpl.java:57) - User Added Successfully With Mobile Num99
+6 2023/04/11 14:52:17,141 153234 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.createUser(UserController.java:46) - User Created With Id 99
+8 2023/04/11 14:53:08,938 205031 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+10 2023/04/11 14:53:17,892 213985 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:65) - Fetched User With Id 99
+12 2023/04/11 14:55:22,944 339037 [INFO  ] [http-nio-9090-exec-7] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.addToFavourites(UserServiceimpl.java:140) - In Add to Favourites
+14 2023/04/11 14:55:23,004 339097 [INFO  ] [http-nio-9090-exec-7] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.addToFavourites(UserServiceimpl.java:142) - Added to Favourites for User with Id 99
+16 2023/04/11 14:55:23,008 339101 [INFO  ] [http-nio-9090-exec-7] cruddemo.controller.UserController cruddemo.controller.UserController.addToFavourites(UserController.java:98) - In Add To Favourites
+18 2023/04/11 14:55:38,918 355011 [INFO  ] [http-nio-9090-exec-8] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 15:09:19,309 6739 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+4 2023/04/11 15:09:19,341 6771 [ERROR ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:71) - No User With Id 99
+2 2023/04/11 15:10:31,298 14446 [ERROR ] [http-nio-9090-exec-1] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.createUser(UserServiceimpl.java:57) - User Added Successfully With Mobile Num101
+4 2023/04/11 15:10:31,424 14572 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.createUser(UserController.java:46) - User Created With Id 101
+6 2023/04/11 15:10:52,478 35626 [INFO  ] [http-nio-9090-exec-2] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.addToFavourites(UserServiceimpl.java:140) - In Add to Favourites
+8 2023/04/11 15:10:52,535 35683 [INFO  ] [http-nio-9090-exec-2] service.ServiceImpl.UserServiceimpl service.ServiceImpl.UserServiceimpl.addToFavourites(UserServiceimpl.java:142) - Added to Favourites for User with Id 101
+10 2023/04/11 15:10:52,537 35685 [INFO  ] [http-nio-9090-exec-2] cruddemo.controller.UserController cruddemo.controller.UserController.addToFavourites(UserController.java:107) - In Add To Favourites
+12 2023/04/11 15:11:00,472 43620 [INFO  ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+14 2023/04/11 15:11:00,479 43627 [ERROR ] [http-nio-9090-exec-3] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:71) - No User With Id 101
+2 2023/04/11 15:17:07,210 9970 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 15:18:05,024 14916 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 15:18:29,139 6969 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 15:22:51,597 8177 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 15:27:28,666 6936 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id
+2 2023/04/11 15:28:32,809 9100 [INFO  ] [http-nio-9090-exec-1] cruddemo.controller.UserController cruddemo.controller.UserController.getUserByid(UserController.java:59) - in get id

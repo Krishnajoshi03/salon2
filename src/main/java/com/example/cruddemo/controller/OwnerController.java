@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.cruddemo.model.Owner;
 import com.example.cruddemo.repository.OwnerRepository;
 import com.example.cruddemo.service.OwnerService;
-import com.example.cruddemo.service.OwnerServiceimpl;
+import com.example.cruddemo.service.ServiceImpl.OwnerServiceimpl;
 
 @RestController
 @RequestMapping("/api")
@@ -24,7 +24,7 @@ public class OwnerController
 	OwnerService service;
 	
 	@PostMapping("/owner")
-	ResponseEntity<String> createOwner(String userId)
+	ResponseEntity<String> newOwner(String userId)
 	{
 		String id=service.createOwner(userId);
 		if(id=="")

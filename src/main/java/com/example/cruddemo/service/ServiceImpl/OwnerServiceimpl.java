@@ -1,4 +1,4 @@
-package com.example.cruddemo.service;
+package com.example.cruddemo.service.ServiceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import com.example.cruddemo.model.Owner;
 import com.example.cruddemo.model.Users;
 import com.example.cruddemo.repository.OwnerRepository;
+import com.example.cruddemo.service.OwnerService;
 
 @Service
 public class OwnerServiceimpl implements OwnerService{

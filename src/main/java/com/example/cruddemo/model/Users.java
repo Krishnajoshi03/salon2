@@ -26,14 +26,17 @@ import lombok.RequiredArgsConstructor;
 @Document("sl_user")
 @Data
 @AllArgsConstructor
-@JsonInclude(JsonInclude.Include.NON_NULL)
 @RequiredArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Users  implements Serializable{
 
-	private static final long serialVersionUID = 1L;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8538159988142302913L;
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
+		
 		return super.toString();
 	}
 	@JsonProperty("u_fn")
@@ -50,10 +53,13 @@ public class Users  implements Serializable{
 
 	@JsonProperty("u_addr")
 	private Address u_addr;
+	
 	@DBRef
 	@JsonProperty("u_fav")
 	private List<Shop> u_fav;
-
-	
+//
+	@DBRef
+	@JsonProperty("u_booking")
+	private List<Booking> u_booking;
 
 }

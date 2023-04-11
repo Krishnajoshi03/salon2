@@ -8,6 +8,7 @@ import org.bson.types.ObjectId;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
+import com.example.cruddemo.model.Booking;
 import com.example.cruddemo.model.Users;
 
 public interface UserService {
@@ -18,6 +19,7 @@ public interface UserService {
 	public Users deleteById(String id);
 	String addToFavourites(String userId, String shopId);
 	public String removeFromFav(String shopId, String id);
+	String updateBooking(Booking booking);
 	
 
 }

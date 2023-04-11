@@ -1,4 +1,4 @@
-package com.example.cruddemo.service;
+package com.example.cruddemo.service.ServiceImpl;
 
 import java.util.*;
 
@@ -19,16 +19,22 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
+
+import com.example.cruddemo.model.Booking;
 import com.example.cruddemo.model.Users;
 
 import com.example.cruddemo.repository.UserRepositoy;
+import com.example.cruddemo.service.UserService;
+
 import springfox.documentation.spring.web.json.Json;
 
 @Service
 public class UserServiceimpl implements UserService {
 
-	//private static final Logger logger = LogManager.getLogger(UserServiceimpl.class);
+	// private static final Logger logger =
+	// LogManager.getLogger(UserServiceimpl.class);
 	private static final Logger logger = LogManager.getLogger(UserServiceimpl.class);
+
 	public UserServiceimpl() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -40,7 +46,7 @@ public class UserServiceimpl implements UserService {
 	UserRepositoy repositoy;
 
 	@Override
-	@CachePut(value = "user",key = "#users.u_mn")
+	@CachePut(value = "user", key = "#users.u_mn")
 	public Users createUser(Users users) {
 		logger.trace("in creeate User ");
 		Users user = repositoy.findById(users.getU_mn()).orElse(null);
@@ -55,11 +61,7 @@ public class UserServiceimpl implements UserService {
 	@Override
 	@Cacheable(value = "user")
 	public List<Users> getAllUsers() {
-//		System.out.println("in getall serivce");
-//		UnwindOperation operation= Aggregation.unwind("u_fav");
-//		MatchOperation aggregation2=Aggregation.match(Criteria.where("u_mn").exists(true));
-//		Aggregation aggregation =Aggregation.newAggregation(operation,aggregation2);
-		//logger.info("Get All Users(Service) ");
+		logger.info("Fetched All Users");
 		return repositoy.findAll();// @formatter:off
 	}
 
@@ -90,6 +92,24 @@ public class UserServiceimpl implements UserService {
 		repositoy.save(existingUser);
 		return existingUser;
 	}
+	
+	@CachePut(value = "user",key = "#booking.bk_u_id.u_mn")
+	@Override
+	public String updateBooking(Booking booking)
+	{
+		org.springframework.data.mongodb.core.query.Query query = new 
+				org.springframework.data.mongodb.core.query.Query().addCriteria(Criteria.where("u_mn").is(booking.getBk_u_id().getU_mn()));
+		Update update = new Update().push("u_booking", booking.getBk_id());
+		
+		FindAndModifyOptions options = new FindAndModifyOptions().returnNew(true).upsert(true);
+		
+		logger.info("In adding new booking");
+		String id1 = mongoTemplate.findAndModify(query, update, options, Users.class).getU_mn();
+		logger.info("Added booking for User with Id "+booking.getBk_u_id().getU_mn());
+		return id1;
+		
+	}
+	
 
 	@Override
 	@CacheEvict(value = "user",key = "#id")
@@ -110,7 +130,6 @@ public class UserServiceimpl implements UserService {
 	@Override
 	@CachePut(value = "user",key = "#p0")
 	public String addToFavourites(String userId, String shopId) {
-		System.out.println("in servimpl");
 		org.springframework.data.mongodb.core.query.Query query = new 
 				org.springframework.data.mongodb.core.query.Query().addCriteria(Criteria.where("u_mn").is(userId));
 		logger.debug("below Criteria");
